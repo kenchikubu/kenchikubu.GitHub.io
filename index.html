@@ -1,18 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Checkbox Example</title>
+	<style>
+		.checkbox-container {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+
+		input[type=checkbox] {
+			display: none;
+		}
+
+		label {
+			display: inline-block;
+			width: 64px;
+			height: 64px;
+			background-color: rgba(0,0,0,0.5);
+			margin: 5px;
+			cursor: pointer;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 5px;
+		}
+
+		input[type=checkbox]:checked + label {
+			background-color: rgba(0,255,0,0.5);
+		}
+	</style>
+</head>
 <body>
-<div id="headline">
-  <h1>マイクラ建築部</h1>
-  <p>1.マイクラ建築部とは？</p>
-</div>
-<div class="main">
-  <h2>メンバー紹介</h2>
-  <p>例えば<span class="light">これ</span>とか</p>
-  <p>
-  <a href="https://kenchikubu.github.io">ホームへ</a>
-  戻ります。</p>
-  <style>
-    .main p span {
-  color:orange;
-}
-    </style>
-</div>
+	<h1>Checkbox Example</h1>
+	<div class="checkbox-container">
+		<!-- Zako -->
+		<input type="checkbox" id="zako1">
+		<label for="zako1" style="background-image: url('zako1.jpg')"></label>
+		<input type="checkbox" id="zako2">
+		<label for="zako2" style="background-image: url('zako2.jpg')"></label>
+		<!-- Repeat for all Zako checkboxes -->
+
+		<!-- Normal -->
+		<input type="checkbox" id="normal1">
+		<label for="normal1" style="background-image: url('normal1.jpg')"></label>
+		<input type="checkbox" id="normal2">
+		<label for="normal2" style="background-image: url('normal2.jpg')"></label>
+		<!-- Repeat for all Normal checkboxes -->
+
+		<!-- Rare -->
+		<input type="checkbox" id="rare1">
+		<label for="rare1" style="background-image: url('rare1.jpg')"></label>
+		<input type="checkbox" id="rare2">
+		<label for="rare2" style="background-image: url('rare2.jpg')"></label>
+		<!-- Repeat for all Rare checkboxes -->
+
+		<!-- Epic -->
+		<input type="checkbox" id="epic1">
+		<label for="epic1" style="background-image: url('epic1.jpg')"></label>
+		<input type="checkbox" id="epic2">
+		<label for="epic2" style="background-image: url('epic2.jpg')"></label>
+		<!-- Repeat for all Epic checkboxes -->
+
+		<!-- Legendary -->
+		<input type="checkbox" id="legendary1">
+		<label for="legendary1" style="background-image: url('legendary1.jpg')"></label>
+		<input type="checkbox" id="legendary2">
+		<label for="legendary2" style="background-image: url('legendary2.jpg')"></label>
+		<!-- Repeat for all Legendary checkboxes -->
+	</div>
 </body>
+</html>
